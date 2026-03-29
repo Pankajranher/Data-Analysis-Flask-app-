@@ -36,22 +36,22 @@ This project simulates a **real-world data analyst workflow**, where raw data is
 ---
 
 ## 📂 Project Structure
-Data-analysis/
-│
-├── app/
-│ ├── init.py # App factory
-│ ├── routes.py # All routes (upload, dashboard)
-│ ├── utils.py # Data processing functions
-│
-├── templates/
-│ ├── index.html # Upload page
-│ ├── dashboard.html # Dashboard page
-│
-├── static/ # Stores generated charts
-├── uploads/ # Stores uploaded CSV files
-│
-├── run.py # Entry point
-└── README.md
+    Data-analysis/
+    │
+    ├── app/
+    │ ├── init.py # App factory
+    │ ├── routes.py # All routes (upload, dashboard)
+    │ ├── utils.py # Data processing functions
+    │
+    ├── templates/
+    │ ├── index.html # Upload page
+    │ ├── dashboard.html # Dashboard page
+    │
+    ├── static/ # Stores generated charts
+    ├── uploads/ # Stores uploaded CSV files
+    │
+    ├── run.py # Entry point
+    └── README.md
 
 
 ---
