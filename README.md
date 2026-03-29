@@ -60,7 +60,7 @@ Data-analysis/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Pankajranher/Data-Analysis-Flask-app-.git
 cd Data-analysis
 python -m venv venv
 venv\Scripts\activate   # Windows
