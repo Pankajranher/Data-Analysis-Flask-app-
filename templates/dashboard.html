@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dashboard</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      /* Cards */
+      .cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+      }
+
+      .card h3 {
+        color: #777;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      /* Chart Section */
+      .chart-container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .chart-container img {
+        margin-top: 20px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      /* Button */
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #667eea;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #764ba2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>📊 Sales Dashboard</h1>
+
+      <!-- Cards -->
+      <div class="cards">
+        <div class="card">
+          <h3>Total Revenue</h3>
+          <p>₹ {{ revenue }}</p>
+        </div>
+
+        <div class="card">
+          <h3>Top Product</h3>
+          <p>{{ top_product }}</p>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="chart-container">
+        <h2>Product Revenue Chart</h2>
+        <img src="/{{ chart }}" />
+      </div>
+
+      <!-- Back Button -->
+      <div style="text-align: center">
+        <a href="/" class="btn">⬅ Upload Another File</a>
+      </div>
+    </div>
+  </body>
+</html>
